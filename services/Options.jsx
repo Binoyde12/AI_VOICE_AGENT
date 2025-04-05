@@ -1,4 +1,4 @@
-export const ExpertsList=[
+export const CoachingOptions =[
   {
     name:'Lecture on Topic',
     icon:'/lecture.png'
