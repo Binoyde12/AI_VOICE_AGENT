@@ -22,3 +22,22 @@ export const CoachingOptions =[
 
 
 ]
+
+export const CoachingExpert = [
+  {
+      name: "Bini",
+      avatar: "/t1.avif",
+  },
+  {
+      name: "Muskaan",
+      avatar: "/t2.jpg",
+  },
+  {
+      name: "Vivek",
+      avatar: "/t3.jpg",
+  }
+  // {
+  //     name: "Binoy",
+  //     avatar: "/t1.avif",
+  // },
+];
