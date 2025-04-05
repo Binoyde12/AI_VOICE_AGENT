@@ -8,6 +8,7 @@ import {
     DialogTrigger,
 } from "@/components/ui/dialog"
 
+
 function UserInputDialog({ children, coachingOption
 }) {
     return (
@@ -15,10 +16,11 @@ function UserInputDialog({ children, coachingOption
             <DialogTrigger>{children}</DialogTrigger>
             <DialogContent>
                 <DialogHeader>
-                    <DialogTitle>Are you absolutely sure?</DialogTitle>
-                    <DialogDescription>
-                        This action cannot be undone. This will permanently delete your account
-                        and remove your data from our servers.
+                    <DialogTitle>{coachingOption.name}</DialogTitle>
+                    <DialogDescription asChild>
+                        <div>
+                            <h2>Enter a topic to masteryour skills in {coachingOption.name}</h2>
+                        </div>
                     </DialogDescription>
                 </DialogHeader>
             </DialogContent>

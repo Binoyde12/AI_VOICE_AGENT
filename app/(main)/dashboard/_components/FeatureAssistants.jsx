@@ -21,8 +21,9 @@ function FeatureAssistants() {
       <div className='grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-5 gap-10 mt-10'>
         {CoachingOptions.map((option, index) => (
           <BlurFade key={option.icon} delay={0.25 + index * 0.05} inView>
-            <UserInputDialog CoachingOptions={option}>
-              <div key={index} className='p-3 bg-secondary rounded-3xl flex flex-col justify-center items-center'>
+            <div key={index} className='p-3 bg-secondary rounded-3xl flex flex-col justify-center items-center'>
+            <UserInputDialog coachingOption={option}>
+              <div key={index} className='flex flex-col justify-center items-center'>
                 <Image src={option.icon} alt={option.name}
                   width={150}
                   height={150}
@@ -30,6 +31,7 @@ function FeatureAssistants() {
                 <h2 className='mt-2'>{option.name}</h2>
               </div>
             </UserInputDialog>
+            </div>
           </BlurFade>
         ))}
       </div>
